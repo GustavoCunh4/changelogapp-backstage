@@ -5,5 +5,9 @@ metadata:
   description: Projeto com changelog integrado
   annotations:
     github.com/project-slug: GustavoCunh4/changelogapp-backstage
-    backstage.io/view-url: https://github.com/GustavoCunh4/changelogapp-backstage/blob/main/changelogapp-backstage/CHANGELOG.mdapiVersion: backstage.io/v1alpha1
+    backstage.io/view-url: https://github.com/GustavoCunh4/changelogapp-backstage/blob/main/changelogapp-backstage/CHANGELOG.mdapiVersion
+spec:
+  type: service
+  lifecycle: production
+  owner: meu-time
 
