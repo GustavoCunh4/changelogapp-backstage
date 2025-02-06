@@ -1,22 +1,24 @@
-name: Release 
- 
-on: 
- push: 
-   branches: 
-     - main 
- 
-jobs: 
- release: 
-   runs-on: ubuntu-latest 
- 
-   steps: 
-     - name: Checkout do código 
-       uses: actions/checkout@v3 
- 
-     - name: Instalar dependências 
-       run: yarn install --frozen-lockfile 
- 
-     - name: Executar Semantic Release 
-       env: 
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-       run: npx semantic-release
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar dependências
+        run: yarn install
+
+      - name: Rodar Semantic Release
+        run: npx semantic-release
