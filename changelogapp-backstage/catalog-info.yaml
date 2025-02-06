@@ -1,12 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: meu-projeto
+  name: Changelog
   description: Projeto com changelog integrado
   annotations:
-    github.com/project-slug: minha-org/meu-repo
-    backstage.io/view-url: https://github.com/GustavoCunh4/changelogapp-backstage/blob/main/changelogapp-backstage/CHANGELOG.md
-spec:
-  type: service
-  lifecycle: production
-  owner: meu-time
+    github.com/project-slug: GustavoCunh4/changelogapp-backstage
+    backstage.io/view-url: https://github.com/GustavoCunh4/changelogapp-backstage/blob/main/changelogapp-backstage/CHANGELOG.mdapiVersion: backstage.io/v1alpha1
+
