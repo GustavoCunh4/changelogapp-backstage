@@ -13960,6 +13960,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"auto-changelog@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "auto-changelog@npm:2.5.0"
+  dependencies:
+    commander: "npm:^7.2.0"
+    handlebars: "npm:^4.7.7"
+    import-cwd: "npm:^3.0.0"
+    node-fetch: "npm:^2.6.1"
+    parse-github-url: "npm:^1.0.3"
+    semver: "npm:^7.3.5"
+  bin:
+    auto-changelog: src/index.js
+  checksum: 10c0/aa4c0389f33902f7185e6956d1dc641db027577a5c2c37782aa5a5dee531030a59f37d943bd8f9e86c457e5a2c75983aab604467a834cb5992c266dc9ac4bbfd
+  languageName: node
+  linkType: hard
+
 "autolinker@npm:^3.11.0":
   version: 3.16.2
   resolution: "autolinker@npm:3.16.2"
@@ -19616,7 +19632,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.3":
+"handlebars@npm:^4.7.3, handlebars@npm:^4.7.7":
   version: 4.7.8
   resolution: "handlebars@npm:4.7.8"
   dependencies:
@@ -24500,7 +24516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.7, node-fetch@npm:^2.6.9, node-fetch@npm:^2.7.0":
+"node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7, node-fetch@npm:^2.6.9, node-fetch@npm:^2.7.0":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -25356,6 +25372,15 @@ __metadata:
     is-decimal: "npm:^1.0.0"
     is-hexadecimal: "npm:^1.0.0"
   checksum: 10c0/f85a22c0ea406ff26b53fdc28641f01cc36fa49eb2e3135f02693286c89ef0bcefc2262d99b3688e20aac2a14fd10b75c518583e875c1b9fe3d1f937795e0854
+  languageName: node
+  linkType: hard
+
+"parse-github-url@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "parse-github-url@npm:1.0.3"
+  bin:
+    parse-github-url: cli.js
+  checksum: 10c0/8a56103f0cdb6f9bd0ffcd7fd4fe1404a414f18441c4d89ab9d9c5eca3b43d6f7cdb899cb979f061df9d8a85d5af275cab05beff953b07f2ff65a6c2826b9293
   languageName: node
   linkType: hard
 
@@ -28338,6 +28363,7 @@ __metadata:
     "@backstage/cli": "npm:^0.29.5"
     "@backstage/e2e-test-utils": "npm:^0.1.1"
     "@playwright/test": "npm:^1.32.3"
+    auto-changelog: "npm:^2.5.0"
     node-gyp: "npm:^10.0.0"
     prettier: "npm:^2.3.2"
     typescript: "npm:~5.4.0"
